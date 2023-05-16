@@ -5,7 +5,7 @@ export const GET = async (request) => {
   try {
     await connectToDB();
 
-    const handovers = await Handover.find({}).populate("creator");
+    const handovers = await Handover.find({}).populate("creator").sort({ createdAt: -1 });
 
     return new Response(JSON.stringify(handovers), { status: 200 });
   } catch (error) {
