@@ -13,6 +13,7 @@ const HandoverSchema = new Schema({
     type: String,
     required: [true, "Tag is required!"],
   },
+  createdAt: { type: Date, default: Date.now }
 });
 
 const Handover = models.Handover || model("Handover", HandoverSchema);
