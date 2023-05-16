@@ -11,6 +11,7 @@ const Home = () => {
         The Handover app is a one stop shop for capturing and sharing all the
         aspects you want to go unmissed
       </p>
+    <p className="text-center w-4/5">please do not share any specific personal details, only capture the essence of what you wish to hand over to your peers</p>
 
       <Feed />
     </section>
